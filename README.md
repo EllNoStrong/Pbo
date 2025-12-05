@@ -24,3 +24,53 @@ Pastikan struktur folder seperti ini:
 ```bash
 git clone https://github.com/EllNoStrong/Pbo.git
 cd Pbo
+
+2. Buat Virtual Environment
+Windows:
+python -m venv venv
+venv\Scripts\activate
+
+MacOS / Linux:
+python3 -m venv venv
+source venv/bin/activate
+
+3. Install Dependencies
+pip install -r requirements.txt
+
+4. Migrate Database
+python manage.py migrate
+
+5. Jalankan Server
+python manage.py runserver
+
+
+Akses melalui:
+
+http://127.0.0.1:8000/
+
+🔐 Akun Superuser (Admin Panel)
+
+Login admin:
+
+Username: adminpanel
+Password: admin123
+
+
+URL Admin:
+
+http://127.0.0.1:8000/admin/
+
+❗ Catatan Penting
+
+Jangan push venv/
+
+Jangan push db.sqlite3
+
+Update selalu requirements.txt dengan:
+
+pip freeze > requirements.txt
+
+👨‍💻 Developer
+
+Marcellino Rafael
+Teknik Elektro – Universitas Negeri Semarang
